@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="18" fill="#572D43"/>
+  <g transform="translate(7, 7) scale(0.5)">
+    <!-- Upper Canopy & Leaves -->
+    <path d="M50 7 C47 13 47 19 50 24 C53 19 53 13 50 7 Z" fill="#D9A7A4"/>
+    <path d="M48 16 C41 12 34 14 31 20 C36 22 43 21 48 18 Z" fill="#D9A7A4"/>
+    <path d="M52 16 C59 12 66 14 69 20 C64 22 57 21 52 18 Z" fill="#D9A7A4"/>
+    <path d="M46 25 C37 20 28 22 23 29 C29 32 38 30 46 27 Z" fill="#D9A7A4"/>
+    <path d="M54 25 C63 20 72 22 77 29 C71 32 62 30 54 27 Z" fill="#D9A7A4"/>
+
+    <!-- Silhouette Core & Spine -->
+    <circle cx="50" cy="27" r="4.5" fill="#F4E8E0"/>
+    <path d="M46 33 C43 38 43 44 45 50 C46.5 54 48 57 47 62" stroke="#FFF9F3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M54 33 C57 38 57 44 55 50 C53.5 54 52 57 53 62" stroke="#FFF9F3" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="50" cy="46" r="3" fill="#F4E8E0"/>
+
+    <!-- Deep Roots -->
+    <path d="M50 62 V94" stroke="#FFF9F3" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M47 63 C40 67 31 71 21 73 C16 74 12 75 8 78" stroke="#FFF9F3" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M53 63 C60 67 69 71 79 73 C84 74 88 75 92 78" stroke="#FFF9F3" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M35 70 C29 78 22 85 14 90" stroke="#D9A7A4" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M65 70 C71 78 78 85 86 90" stroke="#D9A7A4" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+</svg>

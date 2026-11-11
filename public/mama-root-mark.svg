@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <rect width="160" height="160" rx="36" fill="#572D43"/>
+  <rect x="3" y="3" width="154" height="154" rx="33" fill="none" stroke="#914E61" stroke-width="2" stroke-opacity="0.3"/>
+  
+  <g transform="translate(30, 30)">
+    <!-- Sacred aura -->
+    <circle cx="50" cy="50" r="46" stroke="rgba(217, 167, 164, 0.22)" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+    <!-- Upper Canopy & Leaves -->
+    <path d="M50 7 C47 13 47 19 50 24 C53 19 53 13 50 7 Z" fill="#D9A7A4" fill-opacity="0.95"/>
+    <path d="M48 16 C41 12 34 14 31 20 C36 22 43 21 48 18 Z" fill="#D9A7A4" fill-opacity="0.85"/>
+    <path d="M52 16 C59 12 66 14 69 20 C64 22 57 21 52 18 Z" fill="#D9A7A4" fill-opacity="0.85"/>
+    <path d="M46 25 C37 20 28 22 23 29 C29 32 38 30 46 27 Z" fill="#D9A7A4" fill-opacity="0.85"/>
+    <path d="M54 25 C63 20 72 22 77 29 C71 32 62 30 54 27 Z" fill="#D9A7A4" fill-opacity="0.85"/>
+    <path d="M44 33 C34 30 24 35 20 43 C26 44 36 41 43 36 Z" fill="#D9A7A4" fill-opacity="0.8"/>
+    <path d="M56 33 C66 30 76 35 80 43 C74 44 64 41 57 36 Z" fill="#D9A7A4" fill-opacity="0.8"/>
+
+    <!-- Canopy Branches -->
+    <path d="M50 24 C44 26 36 29 27 34" stroke="#FFF9F3" stroke-width="2" stroke-linecap="round"/>
+    <path d="M50 24 C56 26 64 29 73 34" stroke="#FFF9F3" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Maternal Silhouette Core & Heart -->
+    <circle cx="50" cy="27" r="3.2" fill="#F4E8E0"/>
+    <ellipse cx="50" cy="46" rx="5.5" ry="6.5" fill="#D9A7A4" fill-opacity="0.35"/>
+    <circle cx="50" cy="46" r="2.2" fill="#F4E8E0"/>
+
+    <path d="M46.5 32 C44 37 43 43 45 49 C46.5 53 48.5 56 47 62" stroke="#FFF9F3" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M53.5 32 C56 37 57 43 55 49 C53.5 53 51.5 56 53 62" stroke="#FFF9F3" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M50 31 V41 M50 51 V62" stroke="#FFF9F3" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Deep Roots System -->
+    <path d="M38 62 C44 63.5 56 63.5 62 62" stroke="#D9A7A4" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.7"/>
+    <path d="M50 62 C50 71 49 81 50 94" stroke="#FFF9F3" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M50 73 C48 78 45 84 44 91" stroke="#FFF9F3" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M50 75 C52 80 55 86 56 91" stroke="#FFF9F3" stroke-width="1.8" stroke-linecap="round"/>
+
+    <path d="M47 62 C41 66 32 70 23 72 C18 73 14 74 10 77" stroke="#FFF9F3" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M35 68 C31 75 25 82 17 87" stroke="#D9A7A4" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M42 70 C38 78 34 85 30 92" stroke="#FFF9F3" stroke-width="1.7" stroke-linecap="round"/>
+    <path d="M24 78 C20 82 15 85 11 88" stroke="#D9A7A4" stroke-width="1.3" stroke-linecap="round"/>
+
+    <path d="M53 62 C59 66 68 70 77 72 C82 73 86 74 90 77" stroke="#FFF9F3" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M65 68 C69 75 75 82 83 87" stroke="#D9A7A4" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M58 70 C62 78 66 85 70 92" stroke="#FFF9F3" stroke-width="1.7" stroke-linecap="round"/>
+    <path d="M76 78 C80 82 85 85 89 88" stroke="#D9A7A4" stroke-width="1.3" stroke-linecap="round"/>
+  </g>
+</svg>

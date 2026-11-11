@@ -1,0 +1,301 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Green Pops Palette alongside Terracotta */
+  --color-forest-green: #2F6B3F;
+  --color-fresh-leaf: #6DB04F;
+  --color-mint: #E3F1DA;
+  --color-mint-border: #BFDDAE;
+  --color-leaf-text: #1F4A2B;
+
+  /* Mama Root Brand Palette */
+  --color-root-brown: #3B1409;
+  --color-terracotta: #A9421B;
+  --color-clay: #833518;
+  --color-peach: #F7CCA5;
+  --color-sand: #F6E7D8;
+  --color-ivory: #FFF9F2;
+  --color-olive: #5E5A28;
+
+  --color-muted-text: #6B4A3A;
+  --color-card-border: #EAD5C0;
+  --color-chip-border: #B89A82;
+
+  /* Highlight cards */
+  --color-highlight-bg: #F8DFC8;
+  --color-highlight-border: #E0A77A;
+  --color-highlight-text: #7A2E10;
+
+  /* Leaf green accents */
+  --color-leaf-tint: #E3F1DA;
+  --color-leaf-border: #BFDDAE;
+}
+
+@layer base {
+  body {
+    background-color: #FFF9F2;
+    color: #3B1409;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: #3B1409;
+    letter-spacing: -0.015em;
+  }
+  * {
+    border-color: #EAD5C0;
+  }
+}
+
+/* Primary buttons: Terracotta with white text, Clay on hover, press shrink motion */
+.btn-primary {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 1rem;
+  background-color: #A9421B;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+  box-shadow: 0 1px 3px 0 rgba(59, 20, 9, 0.08);
+}
+.btn-primary:hover {
+  background-color: #833518;
+}
+.btn-primary:active {
+  transform: scale(0.98);
+}
+.btn-primary:focus-visible {
+  outline: 2px solid #3B1409;
+  outline-offset: 2px;
+}
+
+/* Outline buttons: white with Terracotta border and text */
+.btn-secondary {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+  border: 1.5px solid #A9421B;
+  color: #A9421B;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
+.btn-secondary:hover {
+  background-color: #F6E7D8;
+}
+.btn-secondary:active {
+  transform: scale(0.98);
+}
+.btn-secondary:focus-visible {
+  outline: 2px solid #3B1409;
+  outline-offset: 2px;
+}
+
+/* Rounded-3xl cards with soft shadows and generous padding */
+.app-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EAD5C0;
+  border-radius: 1.5rem; /* rounded-3xl */
+  padding: 1.25rem;
+  box-shadow: 0 4px 16px -2px rgba(59, 20, 9, 0.04);
+}
+
+.highlight-card {
+  background-color: #F8DFC8;
+  border: 1px solid #E0A77A;
+  color: #7A2E10;
+  border-radius: 1.5rem; /* rounded-3xl */
+  padding: 1.25rem;
+}
+
+/* Cards for health status and saved confirmations: Mint with Mint border and Leaf text */
+.leaf-card,
+.card-mint,
+.status-card,
+.confirmation-card {
+  background-color: #E3F1DA;
+  border: 1px solid #BFDDAE;
+  color: #1F4A2B;
+  border-radius: 1.5rem; /* rounded-3xl */
+  padding: 1.25rem;
+}
+
+/* Interactive chips: rounded-full with chip border #B89A82, min 44px height */
+.chip {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid #B89A82;
+  background-color: #FFFFFF;
+  color: #3B1409;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  outline: none;
+}
+.chip:hover {
+  border-color: #2F6B3F;
+}
+.chip:active {
+  transform: scale(0.97);
+}
+.chip:focus-visible {
+  outline: 2px solid #2F6B3F;
+  outline-offset: 2px;
+}
+.chip-selected {
+  background-color: #2F6B3F;
+  color: #FFFFFF;
+  border-color: #2F6B3F;
+}
+.chip-selected:hover {
+  background-color: #245532;
+}
+
+/* Status Tags */
+.tag-confirmed,
+.tag-reviewed {
+  background-color: #2F6B3F;
+  color: #FFFFFF;
+  border: 1px solid #2F6B3F;
+  border-radius: 0.5rem;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+}
+
+.tag-suspected {
+  background-color: #F7CCA5;
+  color: #3B1409;
+  border: 1px solid #E0A77A;
+  border-radius: 0.5rem;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+}
+
+.tag-notsure,
+.tag-experienced {
+  background-color: #F6E7D8;
+  color: #3B1409;
+  border: 1px solid #EAD5C0;
+  border-radius: 0.5rem;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Round Peach icon circle with Root Brown icon */
+.icon-circle-peach {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background-color: #F7CCA5;
+  color: #3B1409;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Focus ring accessibility utility */
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid #3B1409;
+  outline-offset: 2px;
+}
+
+/* CSS-Only Motion */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes popTick {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pop-tick {
+  animation: popTick 0.25s ease-out forwards;
+}
+
+@keyframes cycleRingDraw {
+  from {
+    stroke-dashoffset: 283;
+  }
+  to {
+    stroke-dashoffset: var(--ring-target, 70);
+  }
+}
+
+.cycle-ring-anim {
+  animation: cycleRingDraw 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Print Stylesheet */
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    color: #1A0A04 !important;
+  }
+  nav, 
+  .no-print, 
+  header, 
+  button, 
+  .btn-primary, 
+  .btn-secondary,
+  .leaf-bg-motif {
+    display: none !important;
+  }
+  .printable-summary {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #FFFFFF !important;
+  }
+}
