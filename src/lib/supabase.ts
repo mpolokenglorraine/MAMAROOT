@@ -14,7 +14,14 @@ if (!supabaseUrl || !supabaseAnonKey) {
   console.warn('Supabase credentials missing. App may not function correctly.');
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
+
+// Fall back to a placeholder so a missing config doesn't crash the whole app on load
+// (createClient throws synchronously on an empty URL, which results in a blank page).
+export const supabase = createClient(
+  supabaseUrl || 'https://placeholder.supabase.co',
+  supabaseAnonKey || 'placeholder-anon-key'
+);
 
 export type Profile = {
   id: string;
